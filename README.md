@@ -42,9 +42,20 @@ cd pastebin-lite
 npm install
 
 ### 3. Create .env file
-MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>/pastebin-lite
-BASE_URL=http://localhost:3000
-TEST_MODE=0
+- MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>/pastebin-lite
+- BASE_URL=http://localhost:3000
+- TEST_MODE=0
 
-### 4. Start server
+### 4. Remove commented-out dotenv lines
+
+In src/db/mongo.js and src/index.js, uncomment the lines importing and configuring dotenv to ensure environment variables are loaded correctly.
+```bash
+// import dotenv from "dotenv";
+// dotenv.config();
+```
+
+### 5. Start server
 node src/index.js
+
+## Live Demo
+https://pastebin-lite-amber-seven.vercel.app/
