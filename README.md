@@ -42,7 +42,7 @@ cd pastebin-lite
 npm install
 
 ### 3. Create .env file
-- MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>/pastebin-lite
+- MONGODB_URI=mongodb+srv://username:password@cluster/pastebin-lite
 - BASE_URL=http://localhost:3000
 - TEST_MODE=0
 
